@@ -1,16 +1,31 @@
 # complexui
 
-A new Flutter project.
+## 프로젝트 개요
 
-## Getting Started
+```
+프로젝트 명 : 복잡한 ui 실습
 
-This project is a starting point for a Flutter application.
+개발 툴 : Android Studio 
 
-A few resources to get you started if this is your first Flutter project:
+개발 언어 : Dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+개발 일시 : 2022-12-26 ~ 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+개발자 : Won Chi Hyeon
+```
+
+## 화면 구성
+
+```
+
+화면 구성은 크게 상단, 중단, 하단으로 나누고 화면 전체는 상하로 스크롤 기능 추가
+
+상단에는 메뉴 7개 배치
+
+중단에는 배너가 자동으로 좌우로 스크롤되는 슬라이더 배치
+
+하단에는 게시글이 표시되는 리스트 배치
+
+탭 메뉴 : 3개의 탭을 네비게이션으로 배치 탭 메뉴를 클릭하면 다른 화면이 표시되도록
+
+```
