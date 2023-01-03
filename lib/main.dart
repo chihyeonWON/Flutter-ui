@@ -30,6 +30,15 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar:AppBar(
         backgroundColor:Colors.white, // 배경을 흰색으로
+        actions:<Widget>[
+          IconButton(
+            icon:Icon(
+              Icons.add,
+              color:Colors.black,
+            ),
+            onPressed:() {},
+          ),
+        ],
         title:Text(
             '복잡한 UI',
           style:TextStyle(color:Colors.black), // 글자색을 검은색으로
