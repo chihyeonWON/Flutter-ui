@@ -37,6 +37,28 @@ class _MyHomePageState extends State<MyHomePage> {
           style:TextStyle(fontSize: 40),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap:(index){
+          setState(() {
+            _index = index; // 선택된 탭의 인덱스로 _index를 변경
+          });
+        },
+        currentIndex: _index, // 선택된 인덱스
+        items:<BottomNavigationBarItem> [
+          BottomNavigationBarItem(
+              label: '홈',
+              icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: '이용서비스',
+            icon: Icon(Icons.assignment),
+          ),
+          BottomNavigationBarItem(
+            label: '내 정보',
+            icon: Icon(Icons.account_circle),
+          ),
+        ]
+      ),
     );
   }
 }
