@@ -35,3 +35,9 @@
 처음 뼈대 화면은 StatefulWidget으로 작성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210294973-48607790-a7b2-4ee1-8ce5-011e8b46f623.png)
+
+#### BottomNavigationBar 위젯을 이용하여 하단 탭 구성
+```
+탭을 클릭하면 페이지가 전환되도록 하단 탭 부분을 작성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210295475-b0c521d2-c4f2-45ad-9956-6060ed234a7f.png)
