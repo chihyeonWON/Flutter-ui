@@ -29,3 +29,9 @@
 탭 메뉴 : 3개의 탭을 네비게이션으로 배치 탭 메뉴를 클릭하면 다른 화면이 표시되도록
 
 ```
+
+#### 뼈대 작성
+```
+처음 뼈대 화면은 StatefulWidget으로 작성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210294973-48607790-a7b2-4ee1-8ce5-011e8b46f623.png)
