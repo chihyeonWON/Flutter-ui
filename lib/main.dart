@@ -10,11 +10,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),   // 첫 페이지를 시작 페이지로 지정
+      home: MyHomePage(),  
     );
   }
 }
 
+// 첫 페이지
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -23,6 +24,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar:AppBar(
+        title:Text('복잡한 UI'),
+      )
+    );
   }
 }
