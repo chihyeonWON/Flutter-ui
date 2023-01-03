@@ -41,3 +41,9 @@
 탭을 클릭하면 페이지가 전환되도록 하단 탭 부분을 작성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210295475-b0c521d2-c4f2-45ad-9956-6060ed234a7f.png)
+
+#### AppBar 위젯 수정
+```
+AppBar 위젯을 머터리얼 디자인에서 앱의 통일성을 위해 수정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210295708-08f59d2c-f132-4bc7-9334-48c27500b8b0.png)
