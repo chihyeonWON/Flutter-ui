@@ -53,3 +53,10 @@ AppBar 위젯을 머터리얼 디자인에서 앱의 통일성을 위해 수정�
 AppBar 상단 오른쪽에 메뉴를 추가할 수 있는 + 아이콘을 추가하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210296081-baf1f561-4eab-4793-9f96-49c16c54d483.png)
+
+#### 화면이 3개인 UI 작성
+```
+StlessWidget 클래스를 상속받은 Page1, Page2, Page3을 생성하고 
+Scaffold의 body 프로퍼티에 작성한 페이지가 표시되도록 수정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210296542-9d05c5f1-d581-497a-a09e-cc0d9e0e792e.png)
