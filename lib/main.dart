@@ -166,15 +166,18 @@ Widget _buildTop(){
               Text('바이크'),
             ],
           ),
-          Column(
-            children: <Widget>[
-              Icon(
-                Icons.local_taxi,
-                size:40,
-              ),
-              Text('대리'),
-            ],
-          ),
+          Opacity(
+            opacity:0.0,
+            child:Column(
+              children: <Widget>[
+                Icon(
+                  Icons.local_taxi,
+                  size:40,
+                ),
+                Text('대리'),
+              ],
+            ),
+          )
         ],
       ),
     ],
