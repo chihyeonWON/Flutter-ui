@@ -90,61 +90,18 @@ class Page1 extends StatelessWidget {
 
 // 상단
 Widget _buildTop(){
-  return Column(
-    children: [
-      Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 위젯 사이의 공간을 동일한 비율로 정렬
-    children: [
-      GestureDetector(
-        onTap:() {
-          print('클릭');
-        },
-        child:Column(
-          children: <Widget>[
-            Icon(
-              Icons.local_taxi,
-              size:40,
-            ),
-            Text('택시'),
-          ],
-        ),
-      ),
-      Column(
-        children: <Widget>[
-          Icon(
-            Icons.local_taxi,
-            size:40,
-          ),
-          Text('블랙'),
-        ],
-      ),
-      Column(
-        children: <Widget>[
-          Icon(
-            Icons.local_taxi,
-            size:40,
-          ),
-          Text('바이크'),
-        ],
-      ),
-      Column(
-        children: <Widget>[
-          Icon(
-            Icons.local_taxi,
-            size:40,
-          ),
-          Text('대리'),
-        ],
-      ),
-    ],
-      ),
-      SizedBox( // 20만큼의 여백 표현
-        height:20,
-      ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 위젯 사이의 공간을 동일한 비율로 정렬
-        children: [
-          Column(
+  return Padding(
+    padding: const EdgeInsets.only(top:20, bottom: 20), // 위 아래 여백 크기 20
+    child: Column(
+      children: [
+        Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 위젯 사이의 공간을 동일한 비율로 정렬
+      children: [
+        GestureDetector(
+          onTap:() {
+            print('클릭');
+          },
+          child:Column(
             children: <Widget>[
               Icon(
                 Icons.local_taxi,
@@ -153,39 +110,85 @@ Widget _buildTop(){
               Text('택시'),
             ],
           ),
-          Column(
-            children: <Widget>[
-              Icon(
-                Icons.local_taxi,
-                size:40,
-              ),
-              Text('블랙'),
-            ],
-          ),
-          Column(
-            children: <Widget>[
-              Icon(
-                Icons.local_taxi,
-                size:40,
-              ),
-              Text('바이크'),
-            ],
-          ),
-          Opacity(
-            opacity:0.0,
-            child:Column(
+        ),
+        Column(
+          children: <Widget>[
+            Icon(
+              Icons.local_taxi,
+              size:40,
+            ),
+            Text('블랙'),
+          ],
+        ),
+        Column(
+          children: <Widget>[
+            Icon(
+              Icons.local_taxi,
+              size:40,
+            ),
+            Text('바이크'),
+          ],
+        ),
+        Column(
+          children: <Widget>[
+            Icon(
+              Icons.local_taxi,
+              size:40,
+            ),
+            Text('대리'),
+          ],
+        ),
+      ],
+        ),
+        SizedBox( // 20만큼의 여백 표현
+          height:20,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 위젯 사이의 공간을 동일한 비율로 정렬
+          children: [
+            Column(
               children: <Widget>[
                 Icon(
                   Icons.local_taxi,
                   size:40,
                 ),
-                Text('대리'),
+                Text('택시'),
               ],
             ),
-          )
-        ],
-      ),
-    ],
+            Column(
+              children: <Widget>[
+                Icon(
+                  Icons.local_taxi,
+                  size:40,
+                ),
+                Text('블랙'),
+              ],
+            ),
+            Column(
+              children: <Widget>[
+                Icon(
+                  Icons.local_taxi,
+                  size:40,
+                ),
+                Text('바이크'),
+              ],
+            ),
+            Opacity(
+              opacity:0.0,
+              child:Column(
+                children: <Widget>[
+                  Icon(
+                    Icons.local_taxi,
+                    size:40,
+                  ),
+                  Text('대리'),
+                ],
+              ),
+            )
+          ],
+        ),
+      ],
+    ),
   );
 }
 
