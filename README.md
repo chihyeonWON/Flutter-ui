@@ -99,3 +99,9 @@ Opacity 위젯으로 감싸고 투명도를 0.0을 줘서 투명하게 만들어
 메뉴를 클릭했을 때 발생하는 이벤트를 작성할 수 있습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210480691-4fdc4f31-65a1-4fb5-8f52-19a1bc47b807.png)
+
+#### 전체 여백 주기
+```
+전체 메뉴의 위 아래 여백을 크기 20만큼 주었습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210481025-3d68018f-f2ed-4471-b9ef-4cd9163f7292.png)
