@@ -95,14 +95,19 @@ Widget _buildTop(){
       Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 위젯 사이의 공간을 동일한 비율로 정렬
     children: [
-      Column(
-        children: <Widget>[
-          Icon(
-            Icons.local_taxi,
-            size:40,
-          ),
-          Text('택시'),
-        ],
+      GestureDetector(
+        onTap:() {
+          print('클릭');
+        },
+        child:Column(
+          children: <Widget>[
+            Icon(
+              Icons.local_taxi,
+              size:40,
+            ),
+            Text('택시'),
+          ],
+        ),
       ),
       Column(
         children: <Widget>[
