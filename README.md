@@ -123,3 +123,15 @@ pub.dev 웹 사이트에서 carousel_slider를 검색합니다.
 pubspec.yaml 파일을 열고 dependencies: 항목에 carousel_slider: 버전을 추가하고 pub get 버튼을 클릭합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210481863-e865347f-e6e2-4ff5-8934-a799fbf1406d.png)
+
+#### 중단에 슬라이더 작성
+```
+의존성 추가를 한 후에 Readme 탭에 있는 내용을 토대로 사용합니다.
+라이브러리 패키지를 임포트하고 pub.dev 웹사이트의 carousel_slider 페이지의 예제 코드를 중단 메서드에 붙여넣습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210482352-6af19c06-5e78-4c44-bc65-2ec86aeb89aa.png)
+```
+좌우로 슬라이드되는 형태가 생성되었으나 공사 중임을 알려주는 ui가 표시됩니다.
+하단에 bottom overflowed by 51 pixels 이라는 메시지가 발생하는 데 이는
+화면 크기보다 51 픽셀 더 크다는 뜻입니다.
+```
