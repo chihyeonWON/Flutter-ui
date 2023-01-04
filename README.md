@@ -91,3 +91,11 @@ Column부분을 Row로 감싼 후(Alt+Enter ->Wrap with Row 기능) Column을 3�
 Opacity 위젯으로 감싸고 투명도를 0.0을 줘서 투명하게 만들어서 메뉴를 총 7개로 구성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210479490-13a2845e-c773-42db-8d80-2aae7cde964b.png)
+
+#### 첫 번째 메뉴 클릭 기능 추가
+```
+첫 번째 메뉴를 GestureDector로 감싸고 onTap 프로퍼티를 줘서 클릭이 가능하도록 하였습니다.
+추후에 다른 메뉴들도 클릭이 가능하게 할 수 있고 
+메뉴를 클릭했을 때 발생하는 이벤트를 작성할 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210480691-4fdc4f31-65a1-4fb5-8f52-19a1bc47b807.png)
