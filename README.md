@@ -136,7 +136,7 @@ pubspec.yaml 파일을 열고 dependencies: 항목에 carousel_slider: 버전을
 화면 크기보다 51 픽셀 더 크다는 뜻입니다.
 ```
 
-### 공사 중 표시 제거
+#### 공사 중 표시 제거
 ```
 공사 중 표시가 뜨는 이유는 화면 크기보다 51픽셀 더 크기 때문이였습니다.
 첫 번째 탭의 화면은 Column 위젯으로 구성하였고 Column이나 Row는 화면 크기를 벗어나는 ui는
@@ -144,3 +144,13 @@ pubspec.yaml 파일을 열고 dependencies: 항목에 carousel_slider: 버전을
 스크롤이 가능한 화면으로 변경, 공사 중 표시를 삭제할 수 있습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210483036-157e39cb-af25-40ad-885c-126651b2d5d4.png)
+
+#### 광고 배너 슬라이더 추가
+```
+슬라이더를 원하는 대로 수정할 수 있습니다. 슬라이더에 표시할 이미지를 3장 준비하여
+리스트를 작성하였고 중단 메서드를 수정하였습니다.
+광고 이미지가 자동으로 슬라이딩 되는 배너를 작성하였습니다.
+향후에 이 이미지에 GestureDector로 감싸서 클릭 이벤트를 줘서 클릭 시 
+다른 페이지로 이동하도록 변경할 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210484199-b1ac1558-0e4e-485d-8d8e-231849746a17.png)
