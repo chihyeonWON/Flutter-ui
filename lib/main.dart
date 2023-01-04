@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
+final dummyItems = [
+  'https://e-ruda.net/uploads/bbspr/2021-12-01_17-29-16_khikJG_00%EC%97%85%EB%A1%9C%EB%93%9C%EC%9A%A9.jpg',
+  'https://thumb.ad.co.kr/article/54/14/34/cf/i/544975-1.jpg',
+  'http://www.sisaweek.com/news/photo/202011/139003_130793_3210.jpg'
+];
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -196,8 +202,11 @@ Widget _buildTop(){
 // 중단
 Widget _buildMiddle() {
   return CarouselSlider(
-    options: CarouselOptions(height: 400.0),
-    items: [1,2,3,4,5].map((i) {
+    options: CarouselOptions(
+      height: 150.0,
+      autoPlay: true, // 슬라이더 자동으로 넘어가는 기능
+    ),
+    items: dummyItems.map((url) {
       return Builder(
         builder: (BuildContext context) {
           return Container(
@@ -206,7 +215,13 @@ Widget _buildMiddle() {
               decoration: BoxDecoration(
                   color: Colors.amber
               ),
-              child: Text('text $i', style: TextStyle(fontSize: 16.0),)
+              child: ClipRRect( // child를 둥근 사각형으로 자르는 위젯
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.network( // 인터넷상의 이미지
+                  url,
+                  fit:BoxFit.cover, // 화면에 여백 x
+                )
+              )
           );
         },
       );
