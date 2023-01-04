@@ -105,3 +105,21 @@ Opacity 위젯으로 감싸고 투명도를 0.0을 줘서 투명하게 만들어
 전체 메뉴의 위 아래 여백을 크기 20만큼 주었습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210481025-3d68018f-f2ed-4471-b9ef-4cd9163f7292.png)
+
+### 중단 부분
+```
+중단 부분에는 좌우로 슬라이드되는 광고를 구성할 것입니다. 
+PageView 위젯을 사용해도 되지만 carousel_slider 라이브러리를 사용하면
+자동 스크롤 지원 기능 등이 지원되어 훨씬 유용하게 사용할 수 있습니다.
+pub.dev 웹 사이트에서 carousel_slider를 검색합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210481315-f33efb7c-3d11-4dd7-8d23-89c18a94a113.png)
+```
+되도록 많은 사람들이 사용하는 라이브러리를 선택한 후 carousel_slider를 클릭하면 라이브러리의 사용 방법 및 설정 밥벙을
+보여주는ㄴ 페이지로 이동하게 됩니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210481512-84e84306-2564-4b2d-872e-54f6a963aa09.png)
+```
+pubspec.yaml 파일을 열고 dependencies: 항목에 carousel_slider: 버전을 추가하고 pub get 버튼을 클릭합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210481863-e865347f-e6e2-4ff5-8934-a799fbf1406d.png)
