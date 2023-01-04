@@ -60,3 +60,9 @@ StlessWidget 클래스를 상속받은 Page1, Page2, Page3을 생성하고
 Scaffold의 body 프로퍼티에 작성한 페이지가 표시되도록 수정하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210296542-9d05c5f1-d581-497a-a09e-cc0d9e0e792e.png)
+
+### 상단 부분
+```
+첫 번째 탭에 해당하는 Page1의 상단, 중단, 하단 부분을 각각 메서드로 분리했습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210474744-f919bf79-0905-4660-938f-feed9cde2fca.png)
