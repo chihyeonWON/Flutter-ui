@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 void main() => runApp(MyApp());
 
@@ -194,7 +195,23 @@ Widget _buildTop(){
 
 // 중단
 Widget _buildMiddle() {
-  return Text('Middle');
+  return CarouselSlider(
+    options: CarouselOptions(height: 400.0),
+    items: [1,2,3,4,5].map((i) {
+      return Builder(
+        builder: (BuildContext context) {
+          return Container(
+              width: MediaQuery.of(context).size.width,
+              margin: EdgeInsets.symmetric(horizontal: 5.0),
+              decoration: BoxDecoration(
+                  color: Colors.amber
+              ),
+              child: Text('text $i', style: TextStyle(fontSize: 16.0),)
+          );
+        },
+      );
+    }).toList(),
+  );
 }
 
 // 하단
