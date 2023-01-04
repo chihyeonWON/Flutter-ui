@@ -10,14 +10,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),  
+      home: MyHomePage(),
     );
   }
 }
 
 // 첫 페이지
 class MyHomePage extends StatefulWidget {
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -33,46 +32,45 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        backgroundColor:Colors.white, // 배경을 흰색으로
-        actions:<Widget>[
+      appBar: AppBar(
+        backgroundColor: Colors.white, // 배경을 흰색으로
+        actions: <Widget>[
           IconButton(
-            icon:Icon(
+            icon: Icon(
               Icons.add,
-              color:Colors.black,
+              color: Colors.black,
             ),
-            onPressed:() {},
+            onPressed: () {},
           ),
         ],
-        title:Text(
-            '복잡한 UI',
-          style:TextStyle(color:Colors.black), // 글자색을 검은색으로
+        title: Text(
+          '복잡한 UI',
+          style: TextStyle(color: Colors.black), // 글자색을 검은색으로
         ),
-        centerTitle:true, // 제목을 가운데로
+        centerTitle: true, // 제목을 가운데로
       ),
       body: _pages[_index],
       bottomNavigationBar: BottomNavigationBar(
-        onTap:(index){
-          setState(() {
-            _index = index; // 선택된 탭의 인덱스로 _index를 변경
-          });
-        },
-        currentIndex: _index, // 선택된 인덱스
-        items:<BottomNavigationBarItem> [
-          BottomNavigationBarItem(
+          onTap: (index) {
+            setState(() {
+              _index = index; // 선택된 탭의 인덱스로 _index를 변경
+            });
+          },
+          currentIndex: _index, // 선택된 인덱스
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
               label: '홈',
               icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: '이용서비스',
-            icon: Icon(Icons.assignment),
-          ),
-          BottomNavigationBarItem(
-            label: '내 정보',
-            icon: Icon(Icons.account_circle),
-          ),
-        ]
-      ),
+            ),
+            BottomNavigationBarItem(
+              label: '이용서비스',
+              icon: Icon(Icons.assignment),
+            ),
+            BottomNavigationBarItem(
+              label: '내 정보',
+              icon: Icon(Icons.account_circle),
+            ),
+          ]),
     );
   }
 }
@@ -80,22 +78,38 @@ class _MyHomePageState extends State<MyHomePage> {
 class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child:Text(
-        '홈 페이지',
-        style:TextStyle(fontSize: 40),
-      ),
+    return Column(
+      children: <Widget>[
+        _buildTop(),
+        _buildMiddle(),
+        _buildBottom(),
+      ],
     );
   }
+}
+
+// 상단
+Widget _buildTop(){
+  return Text('Top');
+}
+
+// 중단
+Widget _buildMiddle() {
+  return Text('Middle');
+}
+
+// 하단
+Widget _buildBottom() {
+  return Text('Bottom');
 }
 
 class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child:Text(
+      child: Text(
         '이용서비스 페이지',
-        style:TextStyle(fontSize: 40),
+        style: TextStyle(fontSize: 40),
       ),
     );
   }
@@ -105,9 +119,9 @@ class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child:Text(
+      child: Text(
         '내 정보 페이지',
-        style:TextStyle(fontSize: 40),
+        style: TextStyle(fontSize: 40),
       ),
     );
   }
