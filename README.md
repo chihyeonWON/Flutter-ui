@@ -135,3 +135,12 @@ pubspec.yaml 파일을 열고 dependencies: 항목에 carousel_slider: 버전을
 하단에 bottom overflowed by 51 pixels 이라는 메시지가 발생하는 데 이는
 화면 크기보다 51 픽셀 더 크다는 뜻입니다.
 ```
+
+### 공사 중 표시 제거
+```
+공사 중 표시가 뜨는 이유는 화면 크기보다 51픽셀 더 크기 때문이였습니다.
+첫 번째 탭의 화면은 Column 위젯으로 구성하였고 Column이나 Row는 화면 크기를 벗어나는 ui는
+작성할 수 없습니다. 따라서 Page1의 Column 위젯을 ListView나 SingleScrollView로 감싸서
+스크롤이 가능한 화면으로 변경, 공사 중 표시를 삭제할 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210483036-157e39cb-af25-40ad-885c-126651b2d5d4.png)
