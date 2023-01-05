@@ -15,6 +15,7 @@
 ```
 
 ## 화면 구성
+![image](https://user-images.githubusercontent.com/58906858/210703248-1d463b34-dc6f-41c4-87d4-7233665c07ec.png)
 
 ```
 
