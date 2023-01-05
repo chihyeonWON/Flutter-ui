@@ -9,7 +9,7 @@
 
 개발 언어 : Dart
 
-개발 일시 : 2022-12-26 ~ 
+개발 일시 : 2022-12-26 ~ 2023-01-05
 
 개발자 : Won Chi Hyeon
 ```
@@ -154,3 +154,18 @@ pubspec.yaml 파일을 열고 dependencies: 항목에 carousel_slider: 버전을
 다른 페이지로 이동하도록 변경할 수 있습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210484199-b1ac1558-0e4e-485d-8d8e-231849746a17.png)
+
+### 하단 부분
+```
+하단에는 공지사항 같은 느낌의 글 목록을 표시할 것입니다.
+```
+
+#### ListView 위젯과 ListTile 위젯으로 하단 구현
+```
+ListTile 안에 아이콘과 텍스트를 넣고 ListView를 10개 생성합니다.
+이때 ListView 안에 ListView를 넣을 때(스크롤객체 안에 스크롤 객체) SHRINKwRAP 프로퍼티를 true로 설정해줘야 합니다.
+안쪽 리스트의 스크롤을 막아서 전체 스크롤으로 작동하도록 NeverScrollableScrollPhysics 클래스의 인스턴트를 설정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210702788-0d473ccf-7536-4f42-8d74-de261cfab631.png)
+
+이로서 복잡한 ui 앱 프로젝트의 개발이 모두 끝이 났습니다.
